@@ -37,7 +37,7 @@ class PythonPackageManager(QWidget):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("Python Package Manager")
-        self.setWindowIcon(QIcon("pypkgmgr.ico"))
+        self.setWindowIcon(QIcon("assets/pypkgmgr.ico"))
         self.resize(950, 650)
 
         # ----- Menu Bar -----
@@ -277,7 +277,7 @@ if __name__ == "__main__":
     app = QApplication(sys.argv)
 
     # Splash screen while loading packages
-    splash_pix = QPixmap("splash.png")
+    splash_pix = QPixmap("assets/splash.png")
     splash = QSplashScreen(splash_pix, Qt.WindowStaysOnTopHint)
     splash.showMessage("Fetching installed Python packages...",
                        Qt.AlignCenter | Qt.AlignBottom, Qt.black)
