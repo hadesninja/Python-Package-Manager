@@ -277,8 +277,7 @@ if __name__ == "__main__":
     app = QApplication(sys.argv)
 
     # Splash screen while loading packages
-    splash_pix = QPixmap(400, 200)
-    splash_pix.fill(Qt.white)
+    splash_pix = QPixmap("splash.png")
     splash = QSplashScreen(splash_pix, Qt.WindowStaysOnTopHint)
     splash.showMessage("Fetching installed Python packages...",
                        Qt.AlignCenter | Qt.AlignBottom, Qt.black)
